@@ -16,7 +16,7 @@ const MyItemShow = (props) => {
                     <p className="product-name" title={product.name}>
                         { name.length > 20 ? name.slice(0, 20) + '...': name }
                     </p>
-                    <p>Price: <span className='orange-color'>${product.price}</span></p>
+                    <p>Price: <span className='orange-color'>{product.price}</span></p>
            
                     <p><small>Quantity: {product.quantity}</small></p>
                 </div>

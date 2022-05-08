@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const [product] = useProductDetails(productId);
 
     // useEffect(() => {
-    //     const url = `http://localhost:5000/Browsproducts/${productId}`;
+    //     const url = `https://stark-retreat-31719.herokuapp.com/Browsproducts/${productId}`;
 
     //     fetch(url)
     //         .then(res => res.json())
@@ -27,7 +27,7 @@ const ProductDetails = () => {
 
 
         const updatedProduct = { quantity };
-        const url = `http://localhost:5000/Browsproducts/${productId}`;
+        const url = `https://stark-retreat-31719.herokuapp.com/Browsproducts/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -52,7 +52,7 @@ const ProductDetails = () => {
     //     const updatedProduct = { quantity };
 
     //     // send data to the server
-    //     const url = `http://localhost:5000/products/${productId}`;
+    //     const url = `https://stark-retreat-31719.herokuapp.com/products/${productId}`;
     //     fetch(url, {
     //         method: 'PUT',
     //         headers: {

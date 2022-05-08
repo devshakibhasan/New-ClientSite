@@ -26,7 +26,7 @@ const AddItemShow = ({ product, handleAddToCart }) => {
 
                 <Card.Body className='cardBody'>
                     <Card.Title> <a href=""><h2>{name}</h2></a> </Card.Title>
-                    <Card.Title>   <p>Price: ${`${price}`}</p></Card.Title>
+                    <Card.Title>   <p>Price: {`${price}`}</p></Card.Title>
                     <Card.Text>
                         <p className='p'>{description}</p>
                     </Card.Text>

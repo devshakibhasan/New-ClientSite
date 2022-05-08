@@ -5,7 +5,7 @@ const useProductDetails = productId =>{
     const [products, setProduct] = useState({});
 
     useEffect( () =>{
-        fetch(`http://localhost:5000/product/${productId}`)
+        fetch(`https://stark-retreat-31719.herokuapp.com/product/${productId}`)
         .then(res => res.json())
         .then(data => setProduct(data));
     }, [productId]);
